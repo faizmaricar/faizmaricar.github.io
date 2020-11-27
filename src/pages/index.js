@@ -1,5 +1,7 @@
 import React from "react"
 
-const IndexPage = () => <h1>Faiz Maricar</h1>
+import { SplashSection } from "../sections"
+
+const IndexPage = () => <SplashSection />
 
 export default IndexPage
