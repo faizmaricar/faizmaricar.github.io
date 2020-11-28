@@ -1,7 +1,19 @@
 import React from "react"
 
-import { SplashSection } from "../sections"
+import {
+  SplashSection,
+  AboutSection,
+  PortfolioSection,
+  ContactsSection,
+} from "../sections"
 
-const IndexPage = () => <SplashSection />
+const IndexPage = () => (
+  <>
+    <SplashSection />
+    <AboutSection />
+    <PortfolioSection />
+    <ContactsSection />
+  </>
+)
 
 export default IndexPage

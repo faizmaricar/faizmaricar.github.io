@@ -26,6 +26,7 @@ export const Item = styled.li`
     padding: 8px;
     transition: color 500ms ease-in 200ms;
     border-bottom: 3px solid ${primary};
+    cursor: pointer;
     
     &:hover {
         color: white;
