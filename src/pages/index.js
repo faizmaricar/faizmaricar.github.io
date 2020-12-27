@@ -1,5 +1,6 @@
 import React from "react"
 
+import { Header } from '../components';
 import {
   SplashSection,
   AboutSection,
@@ -9,6 +10,7 @@ import {
 
 const IndexPage = () => (
   <>
+    <Header />
     <SplashSection />
     <AboutSection />
     <PortfolioSection />

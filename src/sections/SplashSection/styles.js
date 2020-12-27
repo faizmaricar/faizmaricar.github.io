@@ -4,6 +4,7 @@ import { Section, Text } from "../../components"
 import colors from "../../utils/colors"
 
 export const Container = styled(Section)`
+  z-index: 1;
   background-color: ${colors.primary};
   display: flex;
   justify-content: center;
