@@ -6,8 +6,11 @@ const useSiteMetadata = () => {
     query MetadataQuery {
       site {
         siteMetadata {
-          title
-          description
+          defaultTitle: title
+          titleTemplate
+          defaultDescription: description
+          siteUrl: url
+          twitterUsername
           navigation
         }
       }

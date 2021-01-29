@@ -30,8 +30,8 @@ const Navigation = () => {
     <Nav>
       <MenuContainer>
         {navigation.map(n => (
-          <DefaultLink to={`/${n}`}>
-            <MenuItem key={n}>
+          <DefaultLink key={n} to={`/${n}`}>
+            <MenuItem>
               {n.replace(/\w\S*/g, w => w.replace(/^\w/, c => c.toUpperCase()))}
             </MenuItem>
           </DefaultLink>

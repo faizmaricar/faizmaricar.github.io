@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Faiz Maricar`,
-    description: `I'm a front-end developer`,
+    titleTemplate: "%s · The Real Hero",
+    description: `Faiz Maricar, Front-end developer`,
+    url: "https://faizmaricar.github.io",
+    twitterUsername: "@faizmaricar",
     navigation: ["about", "blogs", "tutorials", "contact"],
   },
   plugins: [
