@@ -1,7 +1,7 @@
 import React from "react"
 
 const useWindowSize = () => {
-  const [size, setSize] = React.useState([0, 0])
+  const [size, setSize] = React.useState([false, false])
   const updateSize = React.useCallback(
     () => setSize([window.innerWidth, window.innerHeight]),
     []
