@@ -10,7 +10,7 @@ const Nav = styled.nav`
   float: right;
   @media (max-width: 768px) {
     position: absolute;
-    top: ${props => (props.open ? 40 : 0)}px;
+    top: ${props => (props.open ? 56 : 0)}px;
     left: 0;
     width: 100%;
     z-index: -1;
