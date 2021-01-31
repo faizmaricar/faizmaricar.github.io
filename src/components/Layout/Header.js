@@ -15,10 +15,11 @@ const StyledHeader = styled.header`
   color: ${props => props.theme.colors.white};
 `
 const MenuIcon = styled(FontAwesomeIcon)`
-  margin-right: 16px;
-  font-size: 18px;
-  @media (min-width: 769px) {
-    display: none;
+  display: none;
+  @media (max-width: 768px) {
+    display: inline-block;
+    margin-right: 16px;
+    font-size: 18px;
   }
 `
 const Brand = styled.h3`
