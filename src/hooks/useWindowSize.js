@@ -6,7 +6,7 @@ const useWindowSize = () => {
     () => setSize([window.innerWidth, window.innerHeight]),
     []
   )
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     window.addEventListener("resize", updateSize)
     updateSize()
     return () => window.removeEventListener("resize", updateSize)
