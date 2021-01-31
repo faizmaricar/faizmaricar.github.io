@@ -6,6 +6,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons"
 import Navigation from "./Navigation"
 import Grid from "../Grid"
 import DefaultLink from "../DefaultLink"
+import { useWindowSize } from "../../hooks"
 
 const StyledHeader = styled.header`
   padding: 16px 0;
@@ -15,12 +16,9 @@ const StyledHeader = styled.header`
   color: ${props => props.theme.colors.white};
 `
 const MenuIcon = styled(FontAwesomeIcon)`
-  display: none;
-  @media (max-width: 768px) {
-    display: inline-block;
-    margin-right: 16px;
-    font-size: 18px;
-  }
+  margin-right: 16px;
+  font-size: 18px;
+  cursor: pointer;
 `
 const Brand = styled.h3`
   display: inline-block;
@@ -29,13 +27,16 @@ const Brand = styled.h3`
 
 const Header = () => {
   const [open, setOpen] = React.useState(false)
+  const [width] = useWindowSize()
   return (
     <StyledHeader>
       <Grid style={{ height: "100%" }}>
-        <MenuIcon
-          icon={faBars}
-          onClick={() => setOpen(prevState => !prevState)}
-        />
+        {width < 769 && (
+          <MenuIcon
+            icon={faBars}
+            onClick={() => setOpen(prevState => !prevState)}
+          />
+        )}
         <Brand>
           <DefaultLink to="/">Faiz Maricar</DefaultLink>
         </Brand>
