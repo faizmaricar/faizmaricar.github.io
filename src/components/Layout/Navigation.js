@@ -6,6 +6,18 @@ import { useSiteMetadata } from "../../hooks"
 
 const Nav = styled.nav`
   height: 100%;
+  background-color: ${props => props.theme.colors.themePrimary};
+  float: right;
+  @media (max-width: 768px) {
+    position: absolute;
+    top: ${props => (props.open ? 40 : 0)}px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    color: ${props =>
+      props.open ? props.theme.colors.white : props.theme.colors.themePrimary};
+    transition: top 500ms;
+  }
 `
 const MenuContainer = styled.ul`
   list-style-type: none;
@@ -16,18 +28,18 @@ const MenuContainer = styled.ul`
 `
 const MenuItem = styled.li`
   display: inline-block;
-  padding: 16px;
   margin: 0;
-  &:hover {
-    cursor: pointer;
-    background-color: ${props => props.theme.colors.themeDark};
+  padding: 0 16px;
+  height: 100%;
+  @media (max-width: 768px) {
+    padding: 16px;
   }
 `
 
-const Navigation = () => {
+const Navigation = ({ open }) => {
   const { navigation } = useSiteMetadata()
   return (
-    <Nav>
+    <Nav open={open}>
       <MenuContainer>
         {navigation.map(n => (
           <DefaultLink key={n} to={`/${n}`}>
