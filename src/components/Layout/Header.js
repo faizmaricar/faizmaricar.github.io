@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
 const MenuIcon = styled(FontAwesomeIcon)`
   margin-right: 16px;
   font-size: 18px;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: none;
   }
 `
