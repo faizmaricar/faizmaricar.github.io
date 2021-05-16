@@ -2,9 +2,9 @@ import React from "react"
 
 import { Container } from "./styled"
 
-function section(props) {
+function Section(props) {
   const { children, ...rest } = props
   return <Container {...rest}>{children}</Container>
 }
 
-export default section
+export default Section
