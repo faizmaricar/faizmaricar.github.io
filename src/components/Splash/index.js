@@ -1,21 +1,17 @@
 import React from "react"
 
-import { Message } from "./styled"
-import { Section } from "../"
+import { MessageContainer, MessageText } from "./styled"
+import { Section, Button } from "../"
 
 function Splash() {
   return (
     <Section>
-      <div
-        style={{
-          display: "flex",
-          height: "100%",
-        }}
-      >
-        <Message>
+      <MessageContainer>
+        <MessageText>
           Hi, my name is Faiz Maricar. I am a full-stack developer.
-        </Message>
-      </div>
+        </MessageText>
+        <Button>View my Projects</Button>
+      </MessageContainer>
     </Section>
   )
 }

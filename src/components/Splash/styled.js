@@ -1,13 +1,15 @@
 import styled from "@emotion/styled"
 
-export const Message = styled.div`
+export const MessageContainer = styled.div`
   margin: auto;
   width: 899px;
-  height: 270px;
+  transform: translateY(50%);
   font-family: Jost;
-  font-style: normal;
+  color: #ffffff;
+`
+
+export const MessageText = styled.h1`
   font-weight: 800;
   font-size: 64px;
   line-height: 92px;
-  color: #ffffff;
 `

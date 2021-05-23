@@ -11,6 +11,10 @@ function index() {
           * {
             -ms-overflow-style: none;
           }
+          html {
+            background-color: #000;
+            color: #fff;
+          }
           ::-webkit-scrollbar {
             display: none;
           }
