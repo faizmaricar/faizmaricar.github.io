@@ -1,7 +1,6 @@
 import React from "react"
 import { HomeSection } from "@sections"
-import { Grid, Cell } from "@components"
-import { Title } from "@components/text"
+import { Grid, Cell, Title } from "@components"
 
 function index() {
   return (
