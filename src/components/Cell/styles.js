@@ -2,9 +2,14 @@ import { css } from "@emotion/react"
 import styled from "@emotion/styled"
 import theme from "@utils/theme"
 
-const baseContainerStyles = ({ sm = 12, md = 12, lg = 12 }) => css`
+const baseContainerStyles = ({
+  sm = 12,
+  md = 12,
+  lg = 12,
+  smOffset = 0,
+}) => css`
   padding: 8px;
-  grid-column: 1 / ${sm + 1};
+  grid-column: ${smOffset ? smOffset + 1 : 1} / ${sm + 1 + smOffset};
 
   @media (min-width: ${theme.breakpoints.md}px) {
     padding: 0;

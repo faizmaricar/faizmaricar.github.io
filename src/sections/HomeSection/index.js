@@ -1,5 +1,5 @@
 import React from "react"
-import { Grid, Cell, Title } from "@components"
+import { Grid, Cell, Title, ActionButton } from "@components"
 
 import { Container } from "./styles"
 
@@ -11,6 +11,9 @@ function HomeSection() {
           <Title>
             Hi, my name is Faiz Maricar. I am a full-stack developer.
           </Title>
+        </Cell>
+        <Cell lg={4} md={6} sm={6} smOffset={3}>
+          <ActionButton />
         </Cell>
       </Grid>
     </Container>
