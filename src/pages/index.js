@@ -1,14 +1,19 @@
 import React from "react"
-
-import { GlobalStyles, Splash, Projects } from "../components"
+import { HomeSection } from "@sections"
+import { Grid, Cell } from "@components"
+import { Title } from "@components/text"
 
 function index() {
   return (
-    <>
-      <GlobalStyles />
-      <Splash />
-      <Projects />
-    </>
+    <HomeSection>
+      <Grid>
+        <Cell lg={12} md={12} sm={12}>
+          <Title>
+            Hi, my name is Faiz Maricar. I am a full-stack developer.
+          </Title>
+        </Cell>
+      </Grid>
+    </HomeSection>
   )
 }
 

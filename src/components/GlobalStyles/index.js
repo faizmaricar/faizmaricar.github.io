@@ -7,10 +7,10 @@ function GlobalStyles() {
       styles={css`
         * {
           -ms-overflow-style: none;
+          color: #fff;
         }
         html {
           background-color: #000;
-          color: #fff;
         }
         ::-webkit-scrollbar {
           display: none;

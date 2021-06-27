@@ -1,5 +1,3 @@
-export { default as Button } from "./Button"
-export { default as Section } from "./Section"
-export { default as Splash } from "./Splash"
-export { default as Projects } from "./Projects"
+export { default as Cell } from "./Cell"
 export { default as GlobalStyles } from "./GlobalStyles"
+export { default as Grid } from "./Grid"
