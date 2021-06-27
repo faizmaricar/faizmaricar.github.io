@@ -12,6 +12,7 @@ const baseTextStyles = css`
   @media (min-width: ${theme.breakpoints.md}px) {
     font-size: 64px;
     text-align: left;
+    letter-spacing: 0.02em;
   }
 `
 
