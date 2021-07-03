@@ -1,10 +1,15 @@
 import React from "react"
+import theme from "@utils/theme"
 
 const isBrowser = typeof window !== "undefined"
 
 function getWindowDimensions() {
+  const {
+    breakpoints: { md },
+  } = theme
+
   if (!isBrowser) {
-    return {}
+    return { width: md + 1 }
   }
 
   const { innerWidth: width, innerHeight: height } = window

@@ -15,7 +15,7 @@ function HomeSection() {
   const text = "Hi, my name is Faiz Maricar. I am a full-stack developer."
 
   const Title = () =>
-    width && width > md ? (
+    width > md ? (
       <PageHeading>{text}</PageHeading>
     ) : (
       <ArticleHeading>{text}</ArticleHeading>
