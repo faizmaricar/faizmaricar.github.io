@@ -4,7 +4,7 @@ const isBrowser = typeof window !== "undefined"
 
 function getWindowDimensions() {
   if (!isBrowser) {
-    return
+    return {}
   }
 
   const { innerWidth: width, innerHeight: height } = window
