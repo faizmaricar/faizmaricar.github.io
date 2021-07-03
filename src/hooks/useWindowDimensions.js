@@ -1,6 +1,12 @@
 import React from "react"
 
+const isBrowser = typeof window !== "undefined"
+
 function getWindowDimensions() {
+  if (!isBrowser) {
+    return
+  }
+
   const { innerWidth: width, innerHeight: height } = window
   return {
     width,
@@ -18,8 +24,10 @@ export default function useWindowDimensions() {
       setWindowDimensions(getWindowDimensions())
     }
 
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
+    if (isBrowser) {
+      window.addEventListener("resize", handleResize)
+      return () => window.removeEventListener("resize", handleResize)
+    }
   }, [])
 
   return windowDimensions
