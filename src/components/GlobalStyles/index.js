@@ -7,11 +7,9 @@ function GlobalStyles() {
       styles={css`
         * {
           -ms-overflow-style: none;
-          color: #fff;
         }
         html {
           font-size: 16px;
-          background-color: #000;
         }
         ::-webkit-scrollbar {
           display: none;

@@ -17,12 +17,12 @@ export const PageHeading = styled.h1`
   letter-spacing: -0.03em;
 `
 
-export const ArticleHeading = styled(PageTitle)`
+export const ArticleHeading = styled(PageHeading)`
   font-size: 40px;
   line-height: 58px;
 `
 
-export const ArticleSubHeading = styled(ArticleTitle)`
+export const ArticleSubHeading = styled(ArticleHeading)`
   font-size: 24px;
   line-height: 35px;
 `

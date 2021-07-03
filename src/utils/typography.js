@@ -7,7 +7,7 @@ const typography = new Typography({
   googleFonts: [
     {
       name: "Jost",
-      styles: [],
+      styles: ["500"],
     },
     {
       name: "Poppins",
