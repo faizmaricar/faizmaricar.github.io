@@ -1,8 +1,13 @@
 import React from "react"
-import { HomeSection } from "@sections"
+import { HomeSection, AboutSection } from "@sections"
 
 function index() {
-  return <HomeSection />
+  return (
+    <>
+      <HomeSection />
+      <AboutSection />
+    </>
+  )
 }
 
 export default index
