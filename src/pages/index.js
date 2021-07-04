@@ -1,4 +1,5 @@
 import React from "react"
+import { Navigation } from "@components"
 import { HomeSection, AboutSection } from "@sections"
 
 function index() {
@@ -6,6 +7,7 @@ function index() {
     <>
       <HomeSection />
       <AboutSection />
+      <Navigation />
     </>
   )
 }
