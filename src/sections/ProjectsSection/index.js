@@ -4,13 +4,13 @@ import { ArticleHeading, Body } from "@components/Text"
 
 import { Container } from "./styles"
 
-export default React.forwardRef(function AboutSection(props, ref) {
+export default React.forwardRef(function ProjectsSection(props, ref) {
   return (
-    <Container ref={ref} {...props} id="about">
+    <Container {...props} ref={ref} id="projects">
       <Grid>
         <Cell>
-          <ArticleHeading>About Me</ArticleHeading>
-          <Body>Lorem ipsum</Body>
+          <ArticleHeading>Projects</ArticleHeading>
+          <Body>Coming soon</Body>
         </Cell>
       </Grid>
     </Container>

@@ -3,7 +3,7 @@ import { GlobalStyles } from "@components"
 
 export const wrapPageElement = ({ element, props }) => {
   return (
-    <React.Fragment {...props}>
+    <React.Fragment>
       <GlobalStyles />
       {element}
     </React.Fragment>

@@ -2,7 +2,8 @@ import { css } from "@emotion/react"
 import styled from "@emotion/styled"
 import { ButtonText } from "../Text"
 
-const baseMenuItemButtonStyles = () => css`
+const baseMenuItemButtonStyles = ({ active }) => css`
+  color: ${active ? "#12964f" : "initial"};
   &:hover {
     color: #12ae5a;
     cursor: pointer;

@@ -1,19 +1,33 @@
 import React from "react"
-
+import { useSection } from "@hooks"
+import { scrollToSection } from "@utils/helper"
 import { StyledNav, Menu, MenuItem, StyledButtonText } from "./styles"
 
 function Navigation() {
+  const section = useSection()
   return (
     <StyledNav>
       <Menu>
         <MenuItem>
-          <StyledButtonText>About</StyledButtonText>
+          <StyledButtonText
+            active={section === "about"}
+            onClick={() => scrollToSection("about")}
+          >
+            About
+          </StyledButtonText>
         </MenuItem>
         <MenuItem>
-          <StyledButtonText>Projects</StyledButtonText>
+          <StyledButtonText
+            active={section === "projects"}
+            onClick={() => scrollToSection("projects")}
+          >
+            Projects
+          </StyledButtonText>
         </MenuItem>
         <MenuItem>
-          <StyledButtonText>Contact</StyledButtonText>
+          <StyledButtonText active={section === "contact"}>
+            Contact
+          </StyledButtonText>
         </MenuItem>
       </Menu>
     </StyledNav>
