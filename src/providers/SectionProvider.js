@@ -14,10 +14,11 @@ function SectionProvider(props) {
   const { sections, ...rest } = props
 
   const [state, dispatch] = React.useReducer(sectionReducer, null)
-  const [about, projects] = sections
+  const [about, projects, contact] = sections
 
   const aboutOnScreen = useOnScreen(about)
   const projectsOnScreen = useOnScreen(projects)
+  const contactOnScreen = useOnScreen(contact)
 
   const setSectionOnScreen = onScreen =>
     dispatch({ type: "set_section_on_screen", onScreen })
@@ -25,7 +26,8 @@ function SectionProvider(props) {
   React.useEffect(() => {
     aboutOnScreen && setSectionOnScreen("about")
     projectsOnScreen && setSectionOnScreen("projects")
-  }, [aboutOnScreen, projectsOnScreen])
+    contactOnScreen && setSectionOnScreen("contact")
+  }, [aboutOnScreen, projectsOnScreen, contactOnScreen])
 
   return <SectionContext.Provider {...rest} value={state} />
 }

@@ -25,7 +25,10 @@ function Navigation() {
           </StyledButtonText>
         </MenuItem>
         <MenuItem>
-          <StyledButtonText active={section === "contact"}>
+          <StyledButtonText
+            active={section === "contact"}
+            onClick={() => scrollToSection("contact")}
+          >
             Contact
           </StyledButtonText>
         </MenuItem>
