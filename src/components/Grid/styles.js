@@ -5,7 +5,7 @@ import theme from "@utils/theme"
 const baseContainerStyles = css`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(), auto);
   grid-gap: 5px;
   margin: 0 auto;
 

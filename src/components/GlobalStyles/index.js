@@ -7,6 +7,10 @@ function GlobalStyles() {
       styles={css`
         * {
           -ms-overflow-style: none;
+          margin: 0;
+        }
+        h1 {
+          margin: 0;
         }
         html {
           font-size: 16px;

@@ -36,10 +36,10 @@ function HomeSection() {
   return (
     <Container>
       <Grid>
-        <Cell lg={12} md={12} sm={10} smOffset={1}>
+        <Cell lg={[1, 12]} md={[1, 12]} sm={[2, 11]}>
           <Title />
         </Cell>
-        <Cell lg={4} md={6} sm={10} smOffset={1}>
+        <Cell lg={[1, 4]} md={[1, 6]} sm={[2, 11]}>
           <ActionButton />
         </Cell>
       </Grid>

@@ -31,7 +31,7 @@ export const Body = styled.p`
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.05em;
 `
 
 export const StrongBody = styled(Body)`
