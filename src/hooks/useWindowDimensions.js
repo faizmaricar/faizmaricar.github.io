@@ -4,19 +4,15 @@ import theme from "@utils/theme"
 const isBrowser = typeof window !== "undefined"
 
 function getWindowDimensions() {
-  const {
-    breakpoints: { md },
-  } = theme
-
-  if (!isBrowser) {
-    return { width: md + 1 }
+  if (isBrowser) {
+    const { innerWidth: width, innerHeight: height } = window
+    return {
+      width,
+      height,
+    }
   }
 
-  const { innerWidth: width, innerHeight: height } = window
-  return {
-    width,
-    height,
-  }
+  return { width: 0, height: 0 }
 }
 
 export default function useWindowDimensions() {
@@ -25,14 +21,13 @@ export default function useWindowDimensions() {
   )
 
   React.useEffect(() => {
+    if (!isBrowser) return false
     function handleResize() {
       setWindowDimensions(getWindowDimensions())
     }
 
-    if (isBrowser) {
-      window.addEventListener("resize", handleResize)
-      return () => window.removeEventListener("resize", handleResize)
-    }
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
   }, [])
 
   return windowDimensions
