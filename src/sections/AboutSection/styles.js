@@ -1,11 +1,19 @@
 import styled from "@emotion/styled"
 import { StaticImage } from "gatsby-plugin-image"
+import { Grid } from "@components"
+
 import { ArticleHeading, Body } from "@components/Text"
 import theme from "@utils/theme"
 
 export const Container = styled.section`
   padding: 40px 16px;
   height: 100vh;
+`
+
+export const Content = styled(Grid)`
+  position: relative;
+  z-index: 11;
+  background-color: #ffffff;
 `
 
 export const StyledHeading = styled(ArticleHeading)`

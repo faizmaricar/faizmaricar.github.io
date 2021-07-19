@@ -6,6 +6,7 @@ const baseHeadingStyles = css`
 `
 const baseBodyStyles = css`
   font-family: Poppins;
+  margin-bottom: 8px;
 `
 
 export const PageHeading = styled.h1`

@@ -5,12 +5,11 @@ import theme from "@utils/theme"
 const baseContainerStyles = css`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(), auto);
-  grid-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 5%;
   margin: 0 auto;
 
   @media (min-width: ${theme.breakpoints.md}px) {
-    grid-gap: 10px;
     max-width: 80vw;
   }
 
