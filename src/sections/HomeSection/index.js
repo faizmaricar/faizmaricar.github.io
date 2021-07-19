@@ -15,7 +15,7 @@ function HomeSection() {
             Hi, my name is Faiz Maricar. I am a full-stack developer.
           </StyledHeading>
         </Cell>
-        <Cell lg={[1, 4]} md={[1, 6]} sm={[2, 11]}>
+        <Cell lg={[1, 5]} md={[1, 6]} sm={[2, 11]}>
           <LargeButton onClick={handleClick}>
             Find out more about me
           </LargeButton>
