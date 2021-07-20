@@ -43,9 +43,9 @@ export default React.forwardRef(function ContactSection(props, ref) {
       <Section ref={ref} id="contact">
         <Cell>
           <ArticleHeading>Contact</ArticleHeading>
-          <Input type="email" name="email" placeholder="Email" />
-          <Input type="text" name="name" placeholder="Name" />
-          <TextArea name="message" placeholder="Leave a message..." />
+          <Input type="email" name="email" placeholder="Email" required />
+          <Input type="text" name="name" placeholder="Name" required />
+          <TextArea name="message" placeholder="Leave a message..." required />
         </Cell>
         <Cell lg={[10, 12]}>
           <Button type="submit" fullWidth>
