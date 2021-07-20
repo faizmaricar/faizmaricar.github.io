@@ -4,9 +4,8 @@ import styled from "@emotion/styled"
 const baseHeadingStyles = css`
   font-family: Jost;
 `
-const baseBodyStyles = css`
+export const baseBodyStyles = css`
   font-family: Poppins;
-  margin-bottom: 8px;
 `
 
 export const PageHeading = styled.h1`
@@ -21,6 +20,7 @@ export const PageHeading = styled.h1`
 export const ArticleHeading = styled(PageHeading)`
   font-size: 40px;
   line-height: 58px;
+  margin-bottom: 16px;
 `
 
 export const ArticleSubHeading = styled(ArticleHeading)`
@@ -33,6 +33,7 @@ export const Body = styled.p`
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.05em;
+  margin-bottom: 16px;
 `
 
 export const StrongBody = styled(Body)`

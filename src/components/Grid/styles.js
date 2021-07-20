@@ -6,7 +6,7 @@ const baseContainerStyles = css`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(100px, auto);
-  grid-gap: 5%;
+  grid-gap: 10px 5%;
   margin: 0 auto;
 
   @media (min-width: ${theme.breakpoints.md}px) {
