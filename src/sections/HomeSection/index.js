@@ -16,7 +16,7 @@ function HomeSection() {
           </StyledHeading>
         </Cell>
         <Cell lg={[1, 5]} md={[1, 6]} sm={[2, 11]}>
-          <LargeButton onClick={handleClick}>
+          <LargeButton fullWidth onClick={handleClick}>
             Find out more about me
           </LargeButton>
         </Cell>
