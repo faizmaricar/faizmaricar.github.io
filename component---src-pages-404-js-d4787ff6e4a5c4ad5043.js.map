@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://faizmaricar/./src/pages/404.js"],"names":[],"mappings":"4IAMA,UAJA,WACE,OAAO","file":"component---src-pages-404-js-d4787ff6e4a5c4ad5043.js","sourcesContent":["import React from \"react\"\n\nfunction PageNotFound() {\n  return <div>I think your lost</div>\n}\n\nexport default PageNotFound\n"],"sourceRoot":""}

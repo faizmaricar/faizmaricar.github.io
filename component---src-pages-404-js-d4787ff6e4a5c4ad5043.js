@@ -1,0 +1,2 @@
+(self.webpackChunkfaizmaricar=self.webpackChunkfaizmaricar||[]).push([[883],{9616:function(a,r,u){"use strict";u.r(r);u(7294);var i=u(3431);r.default=function(){return(0,i.tZ)("div",null,"I think your lost")}}}]);
+//# sourceMappingURL=component---src-pages-404-js-d4787ff6e4a5c4ad5043.js.map
